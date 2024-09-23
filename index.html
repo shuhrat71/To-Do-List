@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
+    <audio id="myAudio" src="./notification-2-158188_omH9EQ6e.mp3"></audio>
+    <audio id="timeSound" src="school-bell-199584.mp3"></audio>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+   <div class="container">
+    <header>
+        <div class="container">
+            <div class="todo-icon"></div>
+            <div class="header-search"></div>
+            <div class="header-menu-bar"></div>
+        </div>
+    </header>
+    <aside>
+        <div class="container">
+            <ul>
+                <li><a href="">MY day</a></li>
+                <li><a href="">Important</a></li>
+                <li><a href="">Planned</a></li>
+                <li><a href="">Assigned to me</a></li>
+                <li><a href="">Task</a></li>
+                <li><a href="">Getting Started</a></li>
+                <li><a href="">Groceries</a></li>
+                <li><a href="">New list</a></li>
+            </ul>
+        </div>
+    </aside>
+    <form>
+        <div class="todo-container">
+            <div class="add-to-do-list__wrapper">
+                <div class="input__wrapper">
+                <input type="radio">
+                <input type="text" id="todo-input" name="text" placeholder="Add task">
+                </div>
+                <div class="reminder_wrapper">
+                    <div class="icon_wrapper">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </div>
+                    <div class="add_wrapper">
+                        <button type="submit">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text__wrapper">
+                <ul id="todo-list"></ul>
+            </div>
+            <div class="alarm-container">
+
+            </div> 
+     </form>
+   </div>
+   <div class="success-msg" id="success-msg" data-aos="fade-left">
+    <div class="success-box">
+        <div id="success-icon__wrapper">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="text-contend">
+            <h1>Success!</h1>
+            <p>Place your success messgae here!</p>
+        </div>
+        <div id="close-icon__wrapper">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+   </div>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
